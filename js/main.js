@@ -10,3 +10,13 @@ $(".navbar a").click(function(){
   },1000)
   
  })
+
+/*Слайдер в хедере*/
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+  	items: 1,
+  	loop: true,
+  	autoplay: true,
+  	smartSpeed: 4000
+  });
+});

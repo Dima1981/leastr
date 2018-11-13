@@ -1,3 +1,20 @@
+@import url("normalize.css");
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.clearfix::after,
+.header::after,
+.grid::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 body {
 	font-family: 'Montserrat', sans-serif;
 }
@@ -24,60 +41,62 @@ body {
 }
 /*header style*/
 .header {
-	background-image: url('../img/header.jpg');
- 	background-attachment: fixed;
- 	background-size: cover;
- 	background-position: center;
- 	position: relative;
+    background: url(../img/header.jpg) no-repeat center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
 }
-.overlay {
-	position: absolute;
-	min-height: 100%;
- 	min-width: 100%;
- 	left: 0;
- 	top: 0;
-	background: rgba(44, 44, 44, 0.2);
-    background: -webkit-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(236, 167, 41, 0.6));
-    background: -o-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6));
-    background: -moz-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6));
-    background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(73, 183, 28, 0.7));
+/*на флексе*/
+.info {
+    position: relative;
+    top: 85px;
+    display: flex;
+    justify-content: space-between;
 }
-.center {
-    top: 37%;
+.info__tel a:hover {
+    color: #fff;
 }
-.content-center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-    padding: 0 15px;
-    color: #FFFFFF;
-    width: 100%;
-    max-width: 880px;
-}
-.brand .h1-seo {
-    font-size: 2.8rem;
+.info__btn {
+    border: 1px solid #5db328;
+    border-radius: 25px;
+    background-color: #5db32899;
+    padding: 10px 20px;
     text-transform: uppercase;
+}
+.info__btn:hover {
+    background-color: #5db328;
+}
+.info__btn a {
+    color: #fff;
+}
+.info__btn a:hover {
+    text-decoration: none;
+}
+.main-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+    max-width: 888px;
+}
+.main-text h1{
     font-weight: 300;
+    font-size: 2.8rem;
 }
-h1, .h1 {
-    font-size: 3.5em;
-    line-height: 1.15;
-    margin-bottom: 30px;
-}
-h3 {
-    font-size: 2em;
-    margin-bottom: 30px;
-    line-height: 1.4em;
-}
-.description {
-	position: absolute;
-	top: 85%;
-	width: 90%;
-	color: rgba(255, 255, 255, 0.7);
+.slider {
+    position: relative;
+z-index: 2;
+height: 15vh;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 /*END header*/
 /*START ob_nas*/
