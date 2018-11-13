@@ -1,0 +1,165 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+/*Навигация*/
+.navbar{
+ background:#5db328;
+}
+.nav-link , .navbar-brand{
+ color: #f4f4f4;
+ cursor: pointer;
+}
+.nav-link{
+ margin-right: 1em !important;
+}
+.nav-link:hover{
+ background: #529c25;
+ color: #FFF;
+}
+.navbar-collapse{
+ justify-content: flex-end;
+}
+.navbar-toggler{
+  background:#fff !important;
+}
+/*header style*/
+.header {
+	background-image: url('../img/header.jpg');
+ 	background-attachment: fixed;
+ 	background-size: cover;
+ 	background-position: center;
+ 	position: relative;
+}
+.overlay {
+	position: absolute;
+	min-height: 100%;
+ 	min-width: 100%;
+ 	left: 0;
+ 	top: 0;
+	background: rgba(44, 44, 44, 0.2);
+    background: -webkit-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(236, 167, 41, 0.6));
+    background: -o-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6));
+    background: -moz-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6));
+    background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(73, 183, 28, 0.7));
+}
+.center {
+    top: 37%;
+}
+.content-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 15px;
+    color: #FFFFFF;
+    width: 100%;
+    max-width: 880px;
+}
+.brand .h1-seo {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+h1, .h1 {
+    font-size: 3.5em;
+    line-height: 1.15;
+    margin-bottom: 30px;
+}
+h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    line-height: 1.4em;
+}
+.description {
+	position: absolute;
+	top: 85%;
+	width: 90%;
+	color: rgba(255, 255, 255, 0.7);
+}
+/*END header*/
+/*START ob_nas*/
+#ob_nas {
+	background: #eee;
+    padding: 1em;
+    position: relative;
+}
+#ob_nas h2 {
+	margin: 3rem 0;
+	text-align: center;
+}
+/*END ob_nas*/
+/*START приемущества*/
+#priemyhestva {
+    padding-bottom: 3rem;
+}
+#priemyhestva .h2 {
+	color: #fff;
+	text-align: center;
+	padding: 3rem 0;
+}
+#priemyhestva p {
+	color: #fff;
+}
+/*END приемущества*/
+/*START направления*/
+#works h2 {
+    padding: 3rem 0;
+    text-align: center;
+}
+.blok-element {
+    width: 100%;
+    height: auto;
+    position: relative;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.bloks_p {
+    color: #fff;
+    position: absolute;
+    font-size: 1.72rem;
+    z-index: 2;
+    top: 48%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bloks_p:hover {
+    opacity: 0;
+}
+.blok-element img {
+    max-width: 100%;
+    height: auto;
+}
+
+.blok-element:after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    top: 0;
+    right: 0;
+    left: 0;
+}
+.blok-element:hover::after {
+    cursor: pointer;
+    opacity: 0;
+    transition: 1.5s;
+
+}
+/*END направления*/
+/*Form*/
+
+input, .form-control {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: #5db328;
+}
+.btn-ok {
+    float: right;
+    background-color: #5db328;
+    border-color: #356518;
+}
+}

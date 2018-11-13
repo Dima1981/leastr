@@ -1,0 +1,44 @@
+@media screen and (max-width: 992px) {
+	html {
+		font-size: 90%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	html {
+		font-size: 90%;
+	}
+}
+@media screen and (max-width: 600px) {
+	.brand .h1-seo {
+	    font-size: 1.7rem;
+	    text-transform: uppercase;
+	    font-weight: 300;
+	}
+	h3 {
+	    font-size: 1.2em;
+	    margin-bottom: 30px;
+	    line-height: 1.4em;
+	}
+	.mail, .vk {
+		width: 10%;
+	}
+	#priemyhestva .h2 {
+	    font-size: 1.6rem;
+	    line-height: 1.5;
+		padding: 2rem 5px 0px 5px;
+    }
+	    .bloc-img {
+	    	width: 30%;
+			margin-top: 5px;
+    }
+	    .bloks_p {
+		    color: #fff;
+		    position: absolute;
+		    font-size: 1.72rem;
+		    z-index: 2;
+		    top: 38%;
+		    left: 50%;
+		    transform: translateX(-50%);
+	}
+}
