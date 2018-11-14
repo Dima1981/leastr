@@ -104,6 +104,9 @@ body {
 .slider h3 {
     color: #5db328;
 }
+.slider p {
+    font-size: 1.3rem;
+}
 /*END header*/
 /*START ob_nas*/
 #ob_nas {
