@@ -4,25 +4,35 @@
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
 	html {
 		font-size: 90%;
 	}
-}
-@media screen and (max-width: 600px) {
-	.brand .h1-seo {
-	    font-size: 1.7rem;
-	    text-transform: uppercase;
-	    font-weight: 300;
+	.info {
+		flex-direction: column;
+		text-align: center;
+		margin-top: -25px;
 	}
-	h3 {
-	    font-size: 1.2em;
-	    margin-bottom: 30px;
-	    line-height: 1.4em;
+	.main-text {
+		width: 98%;
+		text-align: center;
+		margin-top: 85px;
 	}
-	.mail, .vk {
-		width: 10%;
+	.main-text h1 {
+		font-size: 2.4rem;
 	}
+	.main-text h2 {
+		font-size: 1.3rem;
+		line-height: 1.5;
+		margin-top: -10px;
+	}
+	.slider {
+		width: 98%;
+	}
+	.slider h3 {
+		font-size: 1.3rem;
+	}
+
 	#priemyhestva .h2 {
 	    font-size: 1.6rem;
 	    line-height: 1.5;
