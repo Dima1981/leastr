@@ -21,3 +21,16 @@ $(document).ready(function(){
   	autoplaySpeed: 10000
   });
 });
+/*обратные звонок*/
+$(".info__btn").on("click", function(e) {
+	
+	e.preventDefault();
+
+	$(".modal_form, .overlay").fadeIn();
+
+});
+
+$(".noy").on("click", function(e){
+	e.preventDefault();
+	$(".modal_form, .overlay").fadeOut();
+});

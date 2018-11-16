@@ -66,6 +66,8 @@ body {
     background-color: #5db32899;
     padding: 10px 20px;
     text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
 }
 .info__btn:hover {
     background-color: #5db328;
@@ -190,4 +192,58 @@ input, .form-control {
     background-color: #5db328;
     border-color: #356518;
 }
+/*END form*/
+/*/// обратный  звонок///*/
+.modal_form {
+        width: 350px;
+    height: auto;
+    border-radius: 5px;
+    background: #eee;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    margin-top: -135px;
+    margin-left: -175px;
+    display: none;
+    z-index: 999;
+    padding: 10px 20px;
+}
+.btn-grub {
+    display: flex;
+    justify-content: space-around;
+}
+.checkbox {
+    padding-top: 25px;
+}
+.checkbox, .text-small{
+    font-size: 12px;
+}
+.input_block {
+    padding-bottom: 20px;
+}
+.input_btn input {
+    border: 1px solid #5db328;
+    border-radius: 8px;
+    padding: 5px 15px;
+    text-align: center;
+    color: #5db328;
+    font-weight: 600;
+}
+.input_btn .noy {
+    border: 1px solid red;
+    border-radius: 8px;
+    padding: 5px 15px;
+    text-align: center;
+    color: red;
+    font-weight: 600;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: none;
 }

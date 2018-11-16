@@ -10,7 +10,6 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <!--Ovl corusel-->
     <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <!--main css-->
   <link rel="stylesheet" type="text/css" href="css/main-css.css">
   <link rel="stylesheet" type="text/css" href="css/mobile-css.css">
@@ -55,8 +54,8 @@
   			<a class="navbar-brand" data-value="header" href="tel:+79377727010">+7-927-454-7147</a>
   		</div>
   		
-  		<div class="info__btn">
-  			<a class="btn-block" href="">заказать звонок</a>
+  		<div class="info__btn" id="phone">
+  			заказать звонок
   		</div>
 
   	</div>
@@ -303,8 +302,34 @@
 
     </div>
     </section>
-  </di>
+  </div>
   <!-- END contact -->
+
+  
+  <!-- /// форма обратной связи /// -->
+  <div class="overlay"></div>
+  <form class="modal_form" id="modal-zvon">
+    <div class="input_block">
+      <input type="text" name="name" required="" class="form-control" placeholder="Ваше имя*" value=""></div>
+    <div class="input_block">
+      <input type="text" class="form-control" id="phone" name="phone" required="" placeholder="Ваш телефон*" value=""></div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox" required="">Согласен на обработку персональных данных</label>
+    </div>
+    <p class="text-small">
+      Ставя отметку, я даю свое согласие на обработку моих персональных данных в соответствии с законом №152-ФЗ «О персональных данных» от 27.07.2006 и принимаю условия
+    </p>
+
+    <div class="btn-grub">
+      <div class="input_btn">
+        <input type="submit" value="Жду звонка!"></div>
+      <div class="input_btn">
+        <input class="noy" type="submit" value="Отмена"></div>
+    </div>
+  </form>
+
+  <!-- /// End форма обратной связи /// -->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
